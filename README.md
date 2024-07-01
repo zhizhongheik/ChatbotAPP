@@ -29,7 +29,10 @@ If you have other problems, you might as well try these: Make sure your parent a
 
 ## References
 
-Valderrama Jonatan, Aguilar-Alonso Igor, Creation Of A ChatBot Based On Natural Language Proccesing For Whatsapp, [https://www.researchgate.net/publication/333253943_Simultaneous_skin_friction_and_velocity_measurements_in_high_Reynolds_number_pipe_and_boundary_layer_flows](https://arxiv.org/abs/2310.10675)
+Valderrama Jonatan, Aguilar-Alonso Igor, Creation Of A ChatBot Based On Natural Language Proccesing For Whatsapp, (URL: https://arxiv.org/abs/2310.10675)
+
+Canziani A. , Paszke A. , Culurciello E. , “an Analysis of Deep Neural Network Models for Practical Applications” (URL: https://arxiv.org/abs/1605.07678)
+
 
 The following references are in no particular order, if my description of some problem was not clear enough I will also put the reference where I found the solution to the problem：
 
