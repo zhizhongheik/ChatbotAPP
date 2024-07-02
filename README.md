@@ -7,8 +7,7 @@ In this project, I will introduce the chatbot, including how to install it, how 
 
 ##  Use and Install
 
-Click the chatbot_main.exe file in the dist file to use it.
-If you want to learn how to create this application, you can follow these steps: First you can use the command `pip install -r requirements.txt` to install the required libraries.(If you have problems at this step, you may be able to find solutions from the following Problems.) And download .zip file unzip it. After you need to change your pth address to correspond to the address of the intents.json file. Because the pyinstaller file is already in the requirements.txt file, you can directly use the command `pyinstaller -F chatbot_main.ipynb` to package this project. Please make sure that you have installed this library. You can use conda list or pip list to check.
+After downloading all the files, open the local cmd, use the cd command to adjust to the folder, then open the chatbot_main file to change the intents file path, and then install the libraries included in the requirements (pip install -r requirements.txt), run the run.py file, and see if it can run. If it can run, use pyinstaller to package the run.spec file (pyinstaller run.spec), and then you can find the run.exe file in the generated dist file to run the application.
 
 ## Problems
 
@@ -45,6 +44,12 @@ wskuge, Manually install Python NLTK language package, https://blog.csdn.net/wsk
 Mohdsanadzakirizvi, Build your own Language Model in Python, https://medium.com/analytics-vidhya/how-to-build-your-first-desktop-application-in-python-7568c7d74311
 
 Ampofo Amoh - Gyebi, How to build your first Desktop Application in Python, https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-language-model-nlp-python-code/
+
+moxinggeiwopaoqilaiya, [Bug修改]‘NoneType’ object has no attribute ‘flush‘, https://blog.csdn.net/2301_79656701/article/details/139096545(chinese)
+
+nengbianshoudemoqiaoli, python使用Pyinstaller打包整个项目, https://blog.csdn.net/Rebacca122222/article/details/124440089?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-124440089-blog-137784557.235^v43^pc_blog_bottom_relevance_base2&spm=1001.2101.3001.4242.2&utm_relevant_index=2(chinese)
+
+qketanghentian, pyinstaller工具打包python项目详细教程, https://blog.csdn.net/weixin_45863084/article/details/137784557(chinese)
 
 ## nltk download link 
 
