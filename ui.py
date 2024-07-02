@@ -36,13 +36,24 @@ class ChatUi(QWidget):
         super().__init__()
         self.setWindowTitle("Chat Bot")
 
+        # Set window size
+        self.setFixedSize(800, 600)
+
+        # Add an informative label
+        self.app_description = QLabel()  
+        self.app_description.setGeometry(10, 10, 300, 100)
+        self.app_description.setText("You can enter information in the dialog box and then receive a reply below the dialog box.")
+        self.app_description.setWordWrap(True)
+
         self.layout = QVBoxLayout()
 
         self.text = QTextEdit()
         self.button = QPushButton("Submit")
         self.quitButton = QPushButton("Quit")
         self.resultLabel = QLabel()
+        self.resultLabel.setGeometry(10, 400, 780, 150) 
 
+        self.layout.addWidget(self.app_description)
         self.layout.addWidget(self.text)
         self.layout.addWidget(self.button)
         self.layout.addWidget(self.quitButton)
@@ -59,5 +70,5 @@ class ChatUi(QWidget):
         if self.thread is not None and self.thread.isRunning():
             return
         self.thread = Worker(self.text.toPlainText(), words, classes, data)
-        self.thread.finished.connect(lambda result: [self.text.clear(), self.resultLabel.setText(result)])  # 新增：清空输入框并设置结果
+        self.thread.finished.connect(lambda result: [self.text.clear(), self.resultLabel.setText(result)])
         self.thread.start()
