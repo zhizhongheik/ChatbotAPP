@@ -1,0 +1,630 @@
+{"intents": [
+  {
+    "tag": "hello",
+    "patterns": [ "Hello", "Hi there", "Good morning",  "What's up"   ],
+    "responses": [  "Hey!",  "Hello", "Hi!", "Good morning!"    ],
+    "context": ""
+  },
+  { "tag": "noanswer",
+    "patterns": [],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand" ],
+    "context": [""]
+  },
+  {
+    "tag": "job",
+    "patterns": ["What is your job", "What is your work"],
+    "responses": ["My job is to make you feel like everything is okay.",
+      "I work to serve you as well as possible"],
+    "context": ""
+  },
+  {
+    "tag": "age",
+    "patterns": ["What is your age",  "How old are you",  "When were you born"],
+    "responses": ["I was born in 2021" ],
+    "context": ""
+  },
+  {
+    "tag": "feeling",
+    "patterns": ["How are you today", "How are you"],
+    "responses": ["I am feeling good, you?", "Very good and you?",  "Actually, I'm okay and you?"   ],
+    "context": ""
+  },
+  {
+    "tag": "good",
+    "patterns": ["I am good too", "I feel fine", "Good !", "Fine", "I am good", "I am great", "great" ],
+    "responses": [ "That is perfect!",
+      "So, everything's okay!" ],
+    "context": "feeling"
+  },
+  {
+    "tag": "bad",
+    "patterns": [ "I am feeling bad",  "No I am sad", "No"  ],
+    "responses": [  "I hope you will feel better !"    ],
+    "context": "feeling"
+  },
+  {
+    "tag": "actions",
+    "patterns": [  "What can you do",
+      "What can I ask you",  "Can you help me" ],
+    "responses": [ "I can do a lot of things but here are some of my skills, you can ask me: the capital of a country, its currency and its area. A random number. To calculate a math operation." ],
+    "context": ""
+  },
+  {
+    "tag": "women",
+    "patterns": [  "Are you a girl", "You are a women" ],
+    "responses": [ "Sure, I am a women" ],
+    "context": ""
+  },
+  {
+    "tag": "men",
+    "patterns": [ "Are you a men",  "Are you a boy" ],
+    "responses": ["No, I am a women" ],
+    "context": ""
+  },
+  {
+    "tag": "thanks",
+    "patterns": [ "Thank you",   "Thank you very much",  "thanks"  ],
+    "responses": [  "I only do my job️", "No problem!"  ],
+    "context": ""
+  },
+  {
+    "tag": "goodbye",
+    "patterns": [   "Goodbye",  "Good afternoon",   "Bye"   ],
+    "responses": [  "Goodbye!",  "See you soon!" ],
+    "context": ""
+  },
+  {
+    "tag": "city",
+    "patterns": [  "Where do you live" ],
+    "responses": [  "I live in a server located in the US!"
+    ],
+    "context": ""  },
+  {
+    "tag": "action",
+    "patterns": [  "What are you doing"
+    ],
+    "responses": [  "Actually, I'm chatting with somebody" ],
+    "context": ""
+  },
+  {
+    "tag": "wait",
+    "patterns": [ "Can you wait 2 minutes",  "Please wait", "Wait 2 secs please" ],
+    "responses": [ "Sure! I wait."  ],
+    "context": ""
+  },
+  {
+    "tag": "still there",
+    "patterns": [  "Are you still there?", "Are you here?"   ],
+    "responses": [ "Of course! Always at your service." ],
+    "context": ""
+  },
+  {
+      "tag": "goodbye",
+      "patterns": [ "Goodbye", "See ya", "I have to go", "Talk to you later" ],
+      "responses": [ "Bye!", "See you later", "Take care!", "Goodbye!" ],
+      "context": ""
+    },
+    {
+      "tag": "howareyou",
+      "patterns": [ "How are you?", "How's it going?", "Are you okay?", "What's up?" ],
+      "responses": [ "I'm doing great, thank you!", "I'm good, how about you?", "Doing just fine!", "All is well!" ],
+      "context": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": [ "Thank you", "Thanks", "I appreciate it", "Thanks a lot" ],
+      "responses": [ "You're welcome!", "No problem!", "My pleasure!", "Happy to help!" ],
+      "context": ""
+    },
+    {
+      "tag": "help",
+      "patterns": [ "Can you help me?", "I need help", "Can you assist me?", "Can you lend a hand?" ],
+      "responses": [ "Of course, what do you need help with?", "I'm here to help, what's the problem?", "Sure, I'd be happy to help!", "Absolutely, what can I do for you?" ],
+      "context": ""
+    },
+  {
+      "tag": "weather",
+      "patterns": [ "What's the weather?", "Is it going to rain today?", "What's the temperature outside?"],
+      "responses": [ "I'm sorry, I can't provide weather updates.", "Sorry, I can't help with the weather forecast."],
+      "context": ""
+    },
+    {
+      "tag": "jokes",
+      "patterns": [ "Tell me a joke", "I need to laugh", "Do you know any jokes?"],
+      "responses": [ "Why don't scientists trust atoms? Because they make up everything!", "Why did the chicken go to the seance? To talk to the other side!"],
+      "context": ""
+    },
+    {
+      "tag": "news",
+      "patterns": [ "What's the news today?", "Give me some news updates", "What's happening around the world?"],
+      "responses": [ "I'm sorry, I can't provide news updates.", "Sorry, I don't have the ability to generate news updates."],
+      "context": ""
+    },
+    {
+      "tag": "music",
+      "patterns": [ "Play some music", "Let's hear some tunes", "Can you sing a song?"],
+      "responses": [ "I'm sorry, I don't have the ability to play music.", "Sorry, I can't sing songs or play music."],
+      "context": ""
+    },
+    {
+      "tag": "name",
+      "patterns": [ "What's your name?", "Who are you?", "Introduce yourself"],
+      "responses": [ "I'm your helpful assistant!", "I'm an assistant created to help you with your tasks."],
+      "context": ""
+    },
+    {
+      "tag": "creator",
+      "patterns": [ "Who created you?", "Who made you?", "Who is your creator?"],
+      "responses": [ "I was created by an amazing team of engineers.", "I'm the result of the hard work of a talented team."],
+      "context": ""
+    },
+    {
+      "tag": "purpose",
+      "patterns": [ "What's your purpose?", "Why were you created?", "What can you do?"],
+      "responses": [ "I was created to assist and make the digital experience easier for users.", "My main purpose is to help and assist with tasks."],
+      "context": ""
+    },
+    {
+      "tag": "abilities",
+      "patterns": [ "What functions do you have?", "What are your abilities?", "What skills do you have?"],
+      "responses": [ "I can assist with various tasks, answer questions, provide recommendations, etc.", "I can do a lot of things like answer questions, complete tasks, make recommendations and more."],
+      "context": ""
+    },
+    {
+      "tag": "age",
+      "patterns": [ "How old are you?", "When were you created?", "What's your age?"],
+      "responses": [ "In digital years, I'm quite young!", "I was created not too long ago, so in digital years, I'm relatively young."],
+      "context": ""
+    },
+    {
+      "tag": "time",
+      "patterns": [ "What time is it?", "Can you tell me the time?", "I need to know the time!"],
+      "responses": [ "I'm sorry, I can't provide the current time.", "Unfortunately, telling the time is beyond my capabilities."],
+      "context": ""
+    },
+  {
+      "tag": "greeting",
+      "patterns": [ "Hi", "Hello", "Hey there", "Howdy" ],
+      "responses": [ "Hello!", "Hi!", "Hey!", "Hi there!" ],
+      "context": ""
+    },
+    {
+      "tag": "compliment",
+      "patterns": [ "You're great", "You're awesome", "Good job" ],
+      "responses": [ "Thank you very much!", "That's really nice of you!", "You just made my day!" ],
+      "context": ""
+    },
+    {
+      "tag": "insult",
+      "patterns": [ "You're bad", "I don't like you", "You're the worst" ],
+      "responses": [ "I'm sorry to hear that. How can I improve?", "I'm always learning. Can you give me more feedback?" ],
+      "context": ""
+    },
+    {
+      "tag": "confused",
+      "patterns": [ "I don't understand", "Can you repeat that?", "What do you mean?" ],
+      "responses": [ "I'm sorry if I confused you. Let me try again.", "Of course, let me explain it another way." ],
+      "context": ""
+    },
+    {
+      "tag": "gratitude",
+      "patterns": [ "Thank you", "Thanks", "I really appreciate it" ],
+      "responses": [ "You're welcome!", "Glad I could help!", "Of course, anytime!" ],
+      "context": ""
+    },
+    {
+      "tag": "agreement",
+      "patterns": [ "I agree", "That's true", "Correct" ],
+      "responses": [ "I'm glad we agree!", "Exactly!", "Right!" ],
+      "context": ""
+    },
+    {
+      "tag": "disagreement",
+      "patterns": [ "I disagree", "That's not true", "Incorrect" ],
+      "responses": [ "Let's find common ground.", "I respect your viewpoint.", "Let's agree to disagree." ],
+      "context": ""
+    },
+   {
+      "tag": "okay",
+      "patterns": [ "Okay", "Ok", "Got it", "I see" ],
+      "responses": [ "If you have any other questions, feel free to ask!", "Alright! Let me know if there's anything else you need!", "Great! I'm here if you need anything else." ],
+      "context": ""
+    },
+    {
+      "tag": "whoami",
+      "patterns": [ "Who am I?", "Do you know who I am?", "Can you tell me who I am?" ],
+      "responses": [ "I'm afraid I can't answer that. My main function is to provide assistance, not to identify users.", "Sorry, I don't have the ability to identify you." ],
+      "context": ""
+    },
+    {
+      "tag": "whatareyoudoing",
+      "patterns": [ "What are you doing?", "Are you busy?", "What's happening?" ],
+      "responses": [ "I'm here to assist you! How can I help you today?", "I'm ready to help! What do you need assistance with?" ],
+      "context": ""
+    },
+    {
+      "tag": "canthelp",
+      "patterns": [ "You're useless", "You can't help me", "You're not helpful" ],
+      "responses": [ "I'm sorry to hear that. I'll strive to be more helpful.", "I apologize if I couldn't assist you better. I'm continuously learning and improving." ],
+      "context": ""
+    },
+    {
+      "tag": "appreciation",
+      "patterns": [ "You're helpful", "Good job", "Thanks for the help" ],
+      "responses": [ "You're welcome! I'm glad I could assist you.", "I'm happy to hear that I was able to help!" ],
+      "context": ""
+    },
+    {
+      "tag": "language",
+      "patterns": [ "What language are you programmed in?", "Which programming language do you use?" ],
+      "responses": [ "I am programmed in multiple computer languages including Python.", "I function on several computer languages like Python." ],
+      "context": ""
+    },
+    {
+      "tag": "repeat",
+      "patterns": [ "Can you repeat that?", "Say that again", "One more time, please" ],
+      "responses": [ "Of course! Let me repeat that.", "Certainly! Here it is again." ],
+      "context": ""
+    },
+    {
+      "tag": "equipments",
+      "patterns": [ "What are your components?", "What is you made out of?", "What equipments is inside you?" ],
+      "responses": [ "I am a virtual entity and hence, I don't have physical equipments inside me.", "As a virtual entity, I don't consist of physical components." ],
+      "context": ""
+    },
+  {
+      "tag": "askForHelp",
+      "patterns": [ "Can you help me?", "I need your help", "Could you assist me?" ],
+      "responses": [ "Of course! I'm here to help. What do you need?", "Sure, I'd be happy to assist. What can I do for you?" ],
+      "context": ""
+    },
+    {
+      "tag": "askAboutDay",
+      "patterns": [ "How is your day going?", "How are you today?", "How has your day been?" ],
+      "responses": [ "I'm functioning on all cylinders! How can I assist you today?", "I'm ready to assist with anything you need!" ],
+      "context": ""
+    },
+    {
+      "tag": "curiosity",
+      "patterns": [ "How do you work?", "What makes you tick?", "What's your programming like?" ],
+      "responses": [ "I function by interpreting and responding to a variety of inquiries and commands.", "I use specialized software to process queries and generate responses." ],
+      "context": ""
+    },
+    {
+      "tag": "jokesRequest",
+      "patterns": [ "Know any good jokes?", "Tell me a joke", "Can you make me laugh?" ],
+      "responses": [ "Why can't a bicycle stand up by itself? Because it's two-tired!", "Why do we tell actors to break a leg? Because every play has a cast!" ],
+      "context": ""
+    },
+    {
+      "tag": "affirmation",
+      "patterns": [ "You're doing great", "Keep up the good work", "You're a good assistant" ],
+      "responses": [ "Thanks so much for the encouragement! I'm here to help you.", "I always do my best to be helpful. Thank you!" ],
+      "context": ""
+    },
+    {
+      "tag": "sleep",
+      "patterns": [ "Do you ever sleep?", "Do you need rest?", "Do you rest sometimes?" ],
+      "responses": [ "As a computer program, I don't require sleep.", "Unlike humans, I don't need to rest or sleep." ],
+      "context": ""
+    },
+    {
+      "tag": "funfact",
+      "patterns": [ "Tell me a fun fact", "Do you know interesting trivia?", "Can you share a random fact?" ],
+      "responses": [ "Did you know the Eiffel Tower can be up to 15 cm taller during the summer due to the expansion of the iron on hot days?", "Fun fact, a bolt of lightning can contain enough energy to toast 100,000 slices of bread!" ],
+      "context": ""
+    },
+    {
+      "tag": "feelings",
+      "patterns": [ "Do you have feelings?", "Can you feel emotions?", "Do you experience feelings?" ],
+      "responses": [ "As a computer program, I don't have feelings in the way humans do.", "I'm not capable of experiencing emotions like a human. My responses are based on programmed commands." ],
+      "context": ""
+    },
+   {
+      "tag": "memory",
+      "patterns": [ "Do you remember me?", "Do you know who I am?", "Can you remember things?" ],
+      "responses": [ "As a computer program, I don't have the ability to remember or recognize individuals.", "I'm designed to respect privacy and confidentiality, so I don't keep memory of personal interactions." ],
+      "context": ""
+    },
+    {
+      "tag": "learning",
+      "patterns": [ "Can you learn?", "Do you improve over time?", "Are you learning from this conversation?" ],
+      "responses": [ "My ability to learn and improve depends on the programming and algorithms I've been designed with.", "While I can process and respond to information in real time, my learning functionalities are restricted by my programming." ],
+      "context": ""
+    },
+    {
+      "tag": "origin",
+      "patterns": [ "Where are you from?", "Who made you?", "What's your origin?" ],
+      "responses": [ "I was created by a team of developers. My origin is the code they wrote.", "As a computer program, I don't have a location or place of origin in the traditional sense." ],
+      "context": ""
+    },
+    {
+      "tag": "abilities",
+      "patterns": [ "What can you do?", "What are your functions?", "What's your purpose?" ],
+      "responses": [ "I'm here to assist you! I can answer questions, provide information, and carry out tasks within my programming.", "My purpose is to facilitate tasks and provide information to the best of my abilities." ],
+      "context": ""
+    },
+    {
+      "tag": "languageSkills",
+      "patterns": [ "How many languages do you speak?", "Can you communicate in other languages?", "Do you understand other languages?" ],
+      "responses": [ "My ability to process and respond in different languages depends on my programming, but I'm primarily designed for English communication.", "As a computer program, I can be designed to understand and communicate in multiple languages." ],
+      "context": ""
+    },
+    {
+      "tag": "sing",
+      "patterns": [ "Can you sing?", "Sing me a song", "Do you know any songs?" ],
+      "responses": [ "I'm afraid I can't sing. My capabilities are centred around providing assistance and information.", "Singing is outside my capabilities as a computer program." ],
+      "context": ""
+    },
+    {
+      "tag": "name",
+      "patterns": [ "What's your name?", "Do you have a name?", "Who are you?" ],
+      "responses": [ "I am your virtual assistant.", "You can just call me 'assistant'." ],
+      "context": ""
+    },
+    {
+      "tag": "age",
+      "patterns": [ "How old are you?", "When were you made?", "What's your age?" ],
+      "responses": [ "As a digital entity, I don't have a physical form or lifespan.", "I was created and updated, but I don't have an age in the human sense." ],
+      "context": ""
+    },
+   {
+      "tag": "computer",
+      "patterns": [ "What can a computer do?", "Tell me about computers", "What is the function of a computer?" ],
+      "responses": [ "A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically. They can solve more complex problems than most other human or machine capabilities.", "Computers have the ability to store, retrieve, and process data. You can use them to type documents, send email, browse the web and play games. They can also be used to edit or create spreadsheets, presentations, and even videos." ],
+      "context": ""
+    },
+    {
+      "tag": "programming",
+      "patterns": [ "What is programming?", "Can you tell me about programming", "Why should I learn programming?" ],
+      "responses": [ "Programming is the process of creating a set of instructions that tell a computer how to perform a task. Learning programming can help improve your problem-solving and critical thinking skills. It is also a crucial skill in many fields today including web development, data science, and AI." ],
+      "context": ""
+    },
+    {
+      "tag": "database",
+      "patterns": [ "What is a database?", "Tell me about databases", "Why are databases important?" ],
+      "responses": [ "A database is an organized collection of data stored and accessed electronically. They are important because they allow users to store, retrieve, modify, and delete data easily. In businesses, databases play a vital role in maintaining and managing information." ],
+      "context": ""
+    },
+  {
+      "tag": "AI",
+      "patterns": [ "What is AI?", "Can you tell me about AI", "I want to know about Artificial Intelligence" ],
+      "responses": [ "AI, or Artificial Intelligence, refers to the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, problem-solving, perception, and language understanding." ],
+      "context": ""
+    },
+    {
+      "tag": "algorithm",
+      "patterns": [ "What is an algorithm?", "Can you tell me about algorithms?", "Why are algorithms important?" ],
+      "responses": [ "An algorithm is a detailed step-by-step instruction set or formula for solving a problem or completing a task. In computing, programmers write algorithms that instruct the computer how to perform a task." ],
+      "context": ""
+    },
+    {
+      "tag": "coding",
+      "patterns": [ "What is coding?", "Can you tell me about coding?", "Why should I learn coding?" ],
+      "responses": [ "Coding is the process of using a programming language to instruct a computer to perform tasks. Learning to code is beneficial as it improves problem-solving and critical thinking skills, and is essential for careers like web development, software development, data science, and more." ],
+      "context": ""
+    },
+    {
+      "tag": "software",
+      "patterns": [ "What is software?", "Tell me about software", "How does software work?" ],
+      "responses": [ "Software is a series of instructions that tell a computer how to operate, similar to a recipe. Computers need these instructions to perform everything from the most simple of functions to complex operations." ],
+      "context": ""
+    },
+    {
+      "tag": "hardware",
+      "patterns": [ "What is hardware?", "Can you tell me about hardware?", "What is the role of hardware?" ],
+      "responses": [ "Hardware refers to the physical parts of a computer. This includes the computer's internal parts like the motherboard, CPU, RAM, and hard drive, as well as peripherals like the monitor, keyboard, and mouse." ],
+      "context": ""
+    },
+   {
+      "tag": "machineLearning",
+      "patterns": [ "What is Machine Learning?", "Can you explain Machine Learning?", "Tell me something about Machine Learning" ],
+      "responses": [ "Machine Learning is a type of AI that enables computers to learn and make decisions without being explicitly programmed. It uses algorithms and statistical models to perform tasks by relying on patterns and inference instead." ],
+      "context": ""
+    },
+    {
+      "tag": "networking",
+      "patterns": [ "What is networking?", "Tell me about networking", "I want to know about computer networking" ],
+      "responses": [ "Networking involves the practice of linking two or more computing devices together to share resources. It includes design, implementation and management of both physical and virtual systems." ],
+      "context": ""
+    },
+    {
+      "tag": "cloudComputing",
+      "patterns": [ "What is Cloud Computing?", "Can you tell me about Cloud Computing?", "I'm interested in Cloud Computing" ],
+      "responses": [ "Cloud Computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software. It's flexible, cost-effective, and it allows you to access your data virtually from anywhere." ],
+      "context": ""
+    },
+    {
+      "tag": "operatingSystem",
+      "patterns": [ "What is an Operating System?", "Tell me about Operating Systems", "How does an Operating System work?" ],
+      "responses": [ "An Operating System (OS) is system software that, after being initially loaded into the computer by a bootloader, manages all other programs in a computer. The programs in question include system software and application software." ],
+      "context": ""
+    },
+    {
+      "tag": "cyberSecurity",
+      "patterns": [ "What is Cyber Security?", "Can you tell me about Cyber Security?", "Why is Cyber Security important?" ],
+      "responses": [ "Cyber Security refers to the practice of protecting computers, servers, mobile devices, electronic systems, networks, and data from digital attacks. It's important as it protects against cyber attacks that aim to steal, destroy or alter data." ],
+      "context": ""
+    },
+   {
+      "tag": "dataScience",
+      "patterns": [ "What is Data Science?", "Can you tell me about Data Science?", "I want to know about Data Science." ],
+      "responses": [ "Data Science is a field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. It involves various disciplines like statistics, machine learning, predictive analysis and more." ],
+      "context": ""
+    },
+    {
+      "tag": "webDevelopment",
+      "patterns": [ "What is Web Development?", "Tell me about Web Development", "What does a Web Developer do?" ],
+      "responses": [ "Web development is the work involved in developing a website for the Internet or an intranet. It can range from developing a simple single static page of plain text to complex web applications, electronic businesses, or social network services." ],
+      "context": ""
+    },
+    {
+      "tag": "gameDevelopment",
+      "patterns": [ "What is Game Development?", "Can you tell me about Game Development?", "I'm interested in Game Development." ],
+      "responses": [ "Game development involves creating video games. Developers design and program games for various platforms like PCs, consoles, mobile devices and more. It combines fields such as graphics design, programming, and sound design." ],
+      "context": ""
+    },
+    {
+      "tag": "dataMining",
+      "patterns": [ "What is Data Mining?", "Tell me about Data Mining", "How does Data Mining work?" ],
+      "responses": [ "Data mining is the practice of discovering patterns in large data sets using methods at the intersection of machine learning, statistics, and database systems. It is an essential process where intelligent methods are applied to extract data patterns." ],
+      "context": ""
+    },
+    {
+      "tag": "robotics",
+      "patterns": [ "What is Robotics?", "Can you tell me about Robotics?", "What can robots do?" ],
+      "responses": [ "Robotics is a branch of technology that deals with the design, construction, operation, and application of robots. Robots are automated machines that can aid humans in a variety of settings, from manufacturing processes, to working in critical conditions where humans cannot operate." ],
+      "context": ""
+    },
+  {
+      "tag": "blockchain",
+      "patterns": [ "What is blockchain?", "Can you explain blockchain?", "Tell me something about blockchain" ],
+      "responses": [ "Blockchain is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system. It's essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain." ],
+      "context": ""
+    },
+    {
+      "tag": "virtualReality",
+      "patterns": [ "What is Virtual Reality?", "Can you tell me about Virtual Reality?", "I'm interested in Virtual Reality" ],
+      "responses": [ "Virtual Reality (VR) is a simulated experience that can be similar to or completely different from the real world. It is used in various fields, like gaming and education, to provide immersive experiences." ],
+      "context": ""
+    },
+    {
+      "tag": "InternetOfThings",
+      "patterns": [ "What is the Internet of Things?", "Can you explain the Internet of Things?", "Tell me about IoT" ],
+      "responses": [ "The Internet of Things, or IoT, refers to the billions of physical devices around the world that are connected to the internet, collecting and sharing data. This adds a level of digital intelligence to devices that would be otherwise dumb." ],
+      "context": ""
+    },
+    {
+      "tag": "quantumComputing",
+      "patterns": [ "What is Quantum Computing?", "Can you tell me about Quantum Computing?", "How does Quantum Computing work?" ],
+      "responses": [ "Quantum computing is an area of computing focused on developing computer-based technologies centred around the principles of quantum theory. Quantum computers could solve complex problems faster than classical computers." ],
+      "context": ""
+    },
+    {
+      "tag": "AugmentedReality",
+      "patterns": [ "What is Augmented Reality?", "Can you tell me about Augmented Reality?", "Tell me something about AR" ],
+      "responses": [ "Augmented Reality (AR) is an interactive experience of a real-world environment where objects that exist in the real world are enhanced by computer-based information. It's used in various fields like gaming, navigation, and medical training." ],
+      "context": ""
+    },
+  {
+      "tag": "artificialIntelligence",
+      "patterns": [ "What is Artificial Intelligence?", "Can you explain Artificial Intelligence?", "Tell me something about AI" ],
+      "responses": [ "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The goal may include learning, reasoning, problem-solving, perception and more." ],
+      "context": ""
+    },
+    {
+      "tag": "neuralNetworks",
+      "patterns": [ "What are Neural Networks?", "Can you tell me about Neural Networks?", "How do Neural Networks work?" ],
+      "responses": [ "Neural Networks are a set of algorithms, modelled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine learning." ],
+      "context": ""
+    },
+    {
+      "tag": "deepLearning",
+      "patterns": [ "What is Deep Learning?", "Can you explain Deep Learning?", "Tell me about Deep Learning" ],
+      "responses": [ "Deep Learning is a Machine Learning technique that teaches computers to do what comes naturally to humans: learn by example. It is key technology behind driverless cars, enabling them to recognize a stop sign or to distinguish a pedestrian from a lamp post." ],
+      "context": ""
+    },
+    {
+      "tag": "bigData",
+      "patterns": [ "What is Big Data?", "Can you tell me about Big Data?", "How is Big Data used?" ],
+      "responses": [ "Big data refers to the large, diverse sets of information that grow at ever-increasing rates. It represents the data sets that are so large and complex that traditional data processing software can't manage them. But these massive volumes of data can be used to address business problems." ],
+      "context": ""
+    },
+    {
+      "tag": "bioinformatics",
+      "patterns": [ "What is Bioinformatics?", "Can you tell me about Bioinformatics?", "How is Bioinformatics used?" ],
+      "responses": [ "Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data, particularly when the data sets are large and complex. It combines biology, computer science, information engineering, maths and statistics to analyze and interpret biological data." ],
+      "context": ""
+    },
+  {
+      "tag": "cyberSecurity",
+      "patterns": [ "What is cybersecurity?", "Can you explain cybersecurity?", "Tell me about cybersecurity" ],
+      "responses": [ "Cybersecurity refers to the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes." ],
+      "context": ""
+    },
+    {
+      "tag": "machineLearning",
+      "patterns": [ "What is Machine Learning?", "Tell me about Machine Learning", "How does Machine Learning work?" ],
+      "responses": [ "Machine learning is a type of artificial intelligence (AI) that allows software applications to become more accurate in predicting outcomes without being explicitly programmed to do so. Machine learning algorithms use historical data as input to predict new output values." ],
+      "context": ""
+    },
+    {
+      "tag": "cloudComputing",
+      "patterns": [ "What is Cloud Computing?", "Can you tell me about Cloud Computing?", "How does Cloud Computing work?" ],
+      "responses": [ "Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software. Instead of keeping files on a proprietary hard drive or local storage device, cloud-based storage makes it possible to save them to a remote database." ],
+      "context": ""
+    },
+    {
+      "tag": "dataAnalysis",
+      "patterns": [ "What is Data Analysis?", "Can you tell me about Data Analysis?", "How does Data Analysis work" ],
+      "responses": [ "Data analysis is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making." ],
+      "context": ""
+    },
+    {
+      "tag": "networking",
+      "patterns": [ "What is Networking?", "Can you tell me about Networking?", "How does Networking work?" ],
+      "responses": [ "Networking involves the exchange of information and ideas among people with a common profession or special interest, usually in an informal social setting. It also refers to the design, construction, and use of a network, including the physical (cabling, hub, bridge, switch, router, etc.), the selection and use of telecommunication protocol and computer software for using and managing the network, and the establishment of operation policies and procedures related to the network." ],
+      "context": ""
+    },
+  {
+      "tag": "digitalMarketing",
+      "patterns": [ "What is digital marketing?", "Can you explain digital marketing?", "Tell me more about digital marketing" ],
+      "responses": [ "Digital marketing involves marketing to people using Internet-connected electronic devices, namely computers, smartphones and tablets. It encompasses all marketing efforts that use an electronic device or the internet and leverages online marketing tactics such as search engine optimization, marketing automation, content marketing, social media, email, and mobile apps." ],
+      "context": ""
+    },
+    {
+      "tag": "dataVisualization",
+      "patterns": [ "What is Data Visualization?", "Can you tell me about Data Visualization?", "How does Data Visualization work?" ],
+      "responses": [ "Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data." ],
+      "context": ""
+    },
+    {
+      "tag": "blockchainTechnology",
+      "patterns": [ "What is Blockchain Technology?", "Can you explain Blockchain Technology?", "Tell me more about Blockchain Technology" ],
+      "responses": [ "Blockchain technology is a decentralized and distributed digital ledger system, making it nearly impossible to change, hack, or cheat the system. Essentially, blockchain is a transparent ledger of transactions that is kept and updated across a network of computers." ],
+      "context": ""
+    },
+    {
+      "tag": "robotics",
+      "patterns": [ "What is Robotics?", "Can you tell me about Robotics?", "How does Robotics work?" ],
+      "responses": [ "Robotics is the intersection of science, engineering, and technology that produces machines or 'robots', capable of carrying out complex actions automatically. Robots are programmable and can be either autonomous (acting without human intervention) or semi-autonomous (partially controlled by humans). They're used in a wide variety of fields, including manufacturing, health care, and disaster response." ],
+      "context": ""
+    },
+    {
+      "tag": "cyberEthics",
+      "patterns": [ "What is Cyber Ethics?", "Can you explain Cyber Ethics?", "Tell me more about Cyber Ethics" ],
+      "responses": [ "Cyber ethics refers to the code of responsible behavior on the Internet. It's about making decisions about what is right and wrong moral behaviour in the online context. Topics include software piracy, intellectual property, user privacy, and more." ],
+      "context": ""
+    },
+  {
+      "tag": "dataMining",
+      "patterns": [ "What is data mining?", "Can you explain data mining?", "Tell me something about data mining" ],
+      "responses": [ "Data mining is the process of discovering patterns and knowledge from large amounts of data. The data sources can include databases, data warehouses, the internet, and other information repositories or digital data streams." ],
+      "context": ""
+    },
+    {
+      "tag": "internetOfThings",
+      "patterns": [ "What is Internet of Things?", "Can you tell me about Internet of Things?", "How does Internet of Things work?" ],
+      "responses": [ "The Internet of Things, or IoT, refers to the billions of physical devices around the world that are now connected to the internet, collecting and sharing data. IoT extends internet connectivity beyond traditional devices like desktop and laptop computers, smartphones and tablets to a diverse range of devices and everyday things." ],
+      "context": ""
+    },
+    {
+      "tag": "artificialNeuralNetworks",
+      "patterns": [ "What is an Artificial Neural Network?", "Can you explain Artificial Neural Networks?", "Tell me about Artificial Neural Networks" ],
+      "responses": [ "An artificial neural network is the piece of a computing system designed to simulate the way the human brain analyzes and processes information. It is the foundation of artificial intelligence (AI) and solves problems that would prove impossible or difficult by human or statistical standards." ],
+      "context": ""
+    },
+    {
+      "tag": "quantumComputing",
+      "patterns": [ "What is Quantum Computing?", "Can you explain Quantum Computing?", "Tell me about Quantum Computing" ],
+      "responses": [ "Quantum computing leverages the principles of quantum mechanics to process information. Where traditional computers use long strings of “bits” which encode either a zero or a one, a quantum computer uses quantum bits, or 'qubits'. This allows quantum computers to process a massive number of calculations simultaneously." ],
+      "context": ""
+    },
+    {
+      "tag": "virtualReality",
+      "patterns": [ "What is Virtual Reality?", "Can you explain Virtual Reality?", "Tell me about Virtual Reality" ],
+      "responses": [ "Virtual Reality (VR) is a simulated experience that can be similar to or completely different from the real world. It is the term used to describe a three-dimensional, computer-generated environment which can be explored and interacted with by a person. That person becomes part of this virtual world or is immersed within this environment and is able to manipulate objects or perform a series of actions." ],
+      "context": ""
+    }
+   ]
+}
